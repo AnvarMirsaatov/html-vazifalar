@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Kursga Ro‘yxatdan O‘tish</title>
+</head>
+<body>
+
+    <h1>Online Kursga Ro‘yxatdan O‘tish</h1>
+
+    <form action="#" method="post">
+
+        <!-- Shaxsiy ma'lumotlar -->
+        <div>
+            <label for="ism">Ism:</label>
+            <input type="text" id="ism" name="ism" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="familiya">Familiya:</label>
+            <input type="text" id="familiya" name="familiya" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="telefon">Telefon raqam:</label>
+            <input type="text" id="telefon" name="telefon" required>
+        </div>
+        <br>
+
+        <div>
+            <label for="yosh">Yosh:</label>
+            <input type="number" id="yosh" name="yosh" min="16" max="60" required>
+        </div>
+
+        <hr>
+
+        <!-- Jins -->
+        <h3>Jins</h3>
+
+        <input type="radio" id="erkak" name="jins" value="erkak">
+        <label for="erkak">Erkak</label>
+
+        <input type="radio" id="ayol" name="jins" value="ayol">
+        <label for="ayol">Ayol</label>
+
+        <hr>
+
+        <!-- Kurs turi -->
+        <h3>Kurs turini tanlang</h3>
+
+        <select name="kurs">
+            <option value="frontend" selected>Frontend</option>
+            <option value="backend">Backend</option>
+            <option value="mobile">Mobile</option>
+            <option value="grafik">Grafik Dizayn</option>
+            <option value="smm">SMM</option>
+        </select>
+
+        <hr>
+
+        <!-- Qo‘shimcha xizmatlar -->
+        <h3>Qo‘shimcha xizmatlar</h3>
+
+        <input type="checkbox" id="sertifikat" name="xizmat" value="sertifikat">
+        <label for="sertifikat">Sertifikat</label>
+        <br>
+
+        <input type="checkbox" id="loyiha" name="xizmat" value="loyiha">
+        <label for="loyiha">Amaliy loyiha</label>
+        <br>
+
+        <input type="checkbox" id="mentor" name="xizmat" value="mentor">
+        <label for="mentor">Mentor yordami</label>
+
+        <hr>
+
+        <!-- To‘lov turi -->
+        <h3>To‘lov turini tanlang</h3>
+
+        <input type="radio" id="naqd" name="tolov" value="naqd">
+        <label for="naqd">Naqd pul</label>
+        <br>
+
+        <input type="radio" id="karta" name="tolov" value="karta">
+        <label for="karta">Karta orqali</label>
+        <br>
+
+        <input type="radio" id="online" name="tolov" value="online">
+        <label for="online">Online to‘lov</label>
+
+        <hr>
+
+        <!-- Tugmalar -->
+        <br>
+        <button type="submit">Yuborish</button>
+        <button type="reset">Tozalash</button>
+
+    </form>
+
+</body>
+</html>

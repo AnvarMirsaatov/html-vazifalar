@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    filter: drop-shadow(5px, 5px, 5px, gray);
+    -webkit-filter: drop-shadow(5px, 5px, 5px, gray);
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
+nav a:hover {
+    color: red;
+    text-decoration: underline;
+}
