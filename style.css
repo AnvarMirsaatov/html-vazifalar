@@ -21,3 +21,6 @@ nav a:hover {
     color: red;
     text-decoration: underline;
 }
+ul , ul{
+    padding:10px;
+}
