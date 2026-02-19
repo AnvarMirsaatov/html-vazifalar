@@ -1,37 +1,177 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+<!doctype html>
+<html>
+  <head>
+    <title>100 Qatorli HTML Amaliyot</title>
+  </head>
+  <body>
+    <h1>Frontend Akademiya</h1>
+    <h2>HTML To'liq Amaliy Mashq</h2>
+    <h3>Asosiy Ma'lumot</h3>
 
+    <p>
+      Bu sahifa <strong>HTML teglarini</strong> to‘liq amalda ishlatish uchun
+      yozilgan.
+    </p>
+    <p><i>Italic matn</i> va <u>Underline matn</u> ishlatilgan.</p>
+    <p>
+      <mark>Muhim matn</mark> va oddiy <span>span elementi</span> ham mavjud.
+    </p>
 
+    <hr />
 
-    <table border="1" cellpadding="10" cellspacing="0">
-<thead>
-    <tr></tr>
-        <th>Ism</th>
-        <th>Yosh</th>
-        <th>Kurs</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>Ali</td>
-        <td>20</td>
-        <td>Frontend</td>
-    </tr>
-    <tr>
-           <td>Ali</td>
-        <td>20</td>
-        <td>Frontend</td>
-    </tr>
-</tbody>
+    <div>
+      <h3>Frontend Texnologiyalar</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>O‘rganish Bosqichlari</h3>
+      <ol>
+        <li>HTML asoslari</li>
+        <li>CSS asoslari</li>
+        <li>JavaScript</li>
+        <li>Framework</li>
+      </ol>
+    </div>
+
+    <hr />
+
+    <h2>1-Form: Ro'yxatdan O‘tish</h2>
+    <form>
+      <label>Ismingiz:</label><br />
+      <input type="text" placeholder="Ismingiz" /><br /><br />
+
+      <label>Yoshingiz:</label><br />
+      <input type="number" placeholder="Yoshingiz" /><br /><br />
+
+      <label>Jins:</label><br />
+      <input type="radio" name="gender" /> Erkak
+      <input type="radio" name="gender" /> Ayol<br /><br />
+
+      <label>Qiziqish:</label><br />
+      <input type="checkbox" /> Dasturlash <input type="checkbox" /> Dizayn
+      <input type="checkbox" /> Marketing<br /><br />
+
+      <label>Viloyat:</label><br />
+      <select>
+        <option>Toshkent</option>
+        <option>Farg‘ona</option>
+        <option>Samarqand</option></select
+      ><br /><br />
+
+      <button type="submit">Yuborish</button>
+    </form>
+
+    <hr />
+
+    <h2>2-Form: Kurs Tanlash</h2>
+    <form>
+      <label>Email:</label><br />
+      <input type="text" placeholder="Email" /><br /><br />
+
+      <label>Kurs turi:</label><br />
+      <input type="radio" name="course" /> Frontend
+      <input type="radio" name="course" /> Backend<br /><br />
+
+      <label>Qo‘shimcha xizmat:</label><br />
+      <input type="checkbox" /> Sertifikat <input type="checkbox" /> Amaliy
+      loyiha<br /><br />
+
+      <label>Daraja:</label><br />
+      <select>
+        <option>Beginner</option>
+        <option>Middle</option>
+        <option>Advanced</option></select
+      ><br /><br />
+
+      <button type="submit">Ro‘yxatdan o‘tish</button>
+    </form>
+
+    <hr />
+
+    <h2>Media Bo‘limi</h2>
+
+    <h3>1-Rasm</h3>
+    <img src="https://via.placeholder.com/250" alt="Sample Image 1" />
+
+    <h3>2-Video</h3>
+    <video width="300" controls>
+      <source src="sample.mp4" type="video/mp4" />
+    </video>
+
+    <h3>3-YouTube Video</h3>
+    <iframe
+      width="300"
+      height="200"
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    >
+    </iframe>
+
+    <hr />
+
+    <h2>1-Jadval: Talabalar</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Ism</th>
+          <th>Yosh</th>
+          <th>Kurs</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ali</td>
+          <td>20</td>
+          <td>Frontend</td>
+        </tr>
+        <tr>
+          <td>Vali</td>
+          <td>22</td>
+          <td>Backend</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Jami: 2 talaba</td>
+        </tr>
+      </tfoot>
     </table>
 
+    <hr />
 
-</body>
+    <h2>2-Jadval: Kurs Narxlari</h2>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Kurs</th>
+          <th>Davomiyligi</th>
+          <th>Narxi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Frontend</td>
+          <td>6 oy</td>
+          <td>3 000 000 so'm</td>
+        </tr>
+        <tr>
+          <td>Backend</td>
+          <td>5 oy</td>
+          <td>2 500 000 so'm</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Yangilangan narxlar</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <br /><br />
+  </body>
 </html>
