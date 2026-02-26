@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <title>9-dars homework</title>
+<link rel="stylesheet" href="../style.css">
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #eef2f3;
+      }
+
+     
+      .card {
+        background-color: white;
+        border-radius: 12px;
+        padding: 20px;
+        margin-top: 20px;
+        border: 2px solid #ccc;
+      }
+
+      h1 {
+        text-align: center;
+        color: darkblue;
+      }
+
+      h2 {
+        color: darkgreen;
+      }
+
+      img {
+        width: 250px;
+        height: 180px;
+        border-radius: 10px;
+        border: 3px solid black;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th, td {
+        border: 1px solid gray;
+        padding: 8px;
+        text-align: center;
+      }
+
+      th {
+        background-color: lightblue;
+      }
+
+      input, select {
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+      }
+
+      button {
+        width: 140px;
+        height: 35px;
+        background-color: darkblue;
+        color: white;
+        border: none;
+        border-radius: 6px;
+      }
+
+      button:hover {
+        background-color: navy;
+      }
+    </style>
+  </head>
+
+  <body>
+
+ <nav>
+      <a href="../index.html">home</a>
+      <a href="../3/3-dars.html">3-dars uyga vazifa</a>
+      <a href="../3/3-dars-qoshimcha.html">3-dars qoshimcha uyga vazifa</a>
+      <a href="../4/4-classwork.html">4-dars darsdagi vazifa</a>
+      <a href="../4/4-homework.html">4-dars uyga vazifa</a>
+      <a href="../5/classwork.html">5-dars darsdagi vazifa</a>
+      <a href="../5/homework.html">5-dars uyga vazifa</a>
+      <a href="../6/classwork.html">6-dars darsdagi vazifa</a>
+      <a href="../6/homework.html">6-dars uyga vazifa</a>
+      <a href="../8/classwork.html">8-dars darsdagi vazifa</a>
+      <a href="../8/homework.html">8-dars uyga vazifa</a>
+      <a href="../9/classwork.html">9-dars darsdagi vazifa</a>
+      <a href="../9/homework.html">9-dars uyga vazifa</a>
+    </nav> 
+    <div class="container">
+
+      <!-- HEADER -->
+      <div class="card">
+        <h1>Ism Familiya</h1>
+        <p>Men <strong>Web Developer</strong> va <mark>UI Designer</mark> man.</p>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="card">
+        <h2>About Me</h2>
+        <p>
+          Men <strong>HTML</strong>, <i>CSS</i>, <u>JavaScript</u> bilan ishlayman.
+          <span style="color:red;">Frontend yo‘nalishida tajribam bor.</span>
+        </p>
+
+        <ul>
+          <li>Tez o‘rganaman</li>
+          <li>Mas'uliyatli</li>
+          <li>Jamoada ishlay olaman</li>
+        </ul>
+      </div>
+
+      <!-- TABLE -->
+      <div class="card">
+        <h2>O‘qigan Kurslarim</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Kurs nomi</th>
+              <th>Yili</th>
+              <th>Daraja</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>HTML & CSS</td>
+              <td>2024</td>
+              <td>Boshlang‘ich</td>
+            </tr>
+            <tr>
+              <td>JavaScript</td>
+              <td>2024</td>
+              <td>O‘rta</td>
+            </tr>
+            <tr>
+              <td>React</td>
+              <td>2025</td>
+              <td>Yuqori</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- MEDIA -->
+      <div class="card">
+        <h2>Portfolio</h2>
+
+        <img src="img.jpg" alt="Portfolio rasm" />
+        <br><br>
+
+        <iframe width="320" height="200"
+          src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+          title="YouTube video">
+        </iframe>
+      </div>
+
+      <!-- FORM -->
+      <div class="card">
+        <h2>Bog‘lanish Formasi</h2>
+
+        <form>
+
+          <label>Ismingiz:</label><br>
+          <input type="text"><br><br>
+
+          <label>Email:</label><br>
+          <input type="email"><br><br>
+
+          <label>Jinsingiz:</label><br>
+          <input type="radio" name="gender"> Erkak
+          <input type="radio" name="gender"> Ayol
+          <br><br>
+
+          <label>Qaysi texnologiyalarni bilasiz?</label><br>
+          <input type="checkbox"> HTML
+          <input type="checkbox"> CSS
+          <input type="checkbox"> JavaScript
+          <input type="checkbox"> React
+          <br><br>
+
+          <label>Kasbingiz:</label><br>
+          <select>
+            <option>Frontend Developer</option>
+            <option>Backend Developer</option>
+            <option>Designer</option>
+          </select>
+          <br><br>
+
+          <button type="submit">Yuborish</button>
+
+        </form>
+      </div>
+
+    </div>
+
+  </body>
+</html>
