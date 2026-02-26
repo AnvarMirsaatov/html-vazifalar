@@ -3,43 +3,46 @@ body {
   background: rgb(214, 205, 205);
 }
 
-h2{
-color: green;
+h2 {
+  color: green;
 }
 
-div{
+div {
   border-radius: 10px;
-
 }
 .Familiya {
   text-align: center;
   background: green;
-  /*padding: 0 0 50px 0;
-  */padding-bottom: 50px;
+  padding-bottom: 50px;
 }
 
-.Familiya h1{
-    color: white;
+.Familiya h1 {
+  color: white;
 }
-.aboutMe{
-    background: white;
-    padding: 10px 0;
-    border:2px solid gray;  
-}
-
-.red-text{
-    color: red;
+.aboutMe {
+  background: white;
+  padding: 10px 0;
+  border: 2px solid gray;
 }
 
-
-.skills{
-    background: white;
-    padding: 10px 0;
-    border:2px solid gray;  
+.red-text {
+  color: red;
 }
 
-ol{
-    background: rgb(212, 242, 242);
+.skills {
+  background: white;
+  padding: 10px 0;
+  border: 2px solid gray;
 }
-ul{
-background: rgb(233, 233, 191);}
+
+ol {
+  background: rgb(212, 242, 242);
+}
+ul {
+  background: rgb(233, 233, 191);
+}
+
+
+
+
+
