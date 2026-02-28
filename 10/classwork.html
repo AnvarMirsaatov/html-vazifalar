@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <title>10-dars homework</title>
+
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #eef2f3;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 12px;
+        padding: 20px;
+        margin-top: 20px;
+        border: 2px solid #ccc;
+      }
+
+      h1 {
+        text-align: center;
+        color: darkblue;
+      }
+
+      h2 {
+        color: darkgreen;
+      }
+
+      img {
+        width: 250px;
+        height: 180px;
+        border-radius: 10px;
+        border: 3px solid black;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border: 1px solid gray;
+        padding: 8px;
+        text-align: center;
+      }
+
+      th {
+        background-color: lightblue;
+      }
+
+      input,
+      select {
+        width: 250px;
+        height: 30px;
+        border-radius: 5px;
+      }
+
+      button {
+        width: 140px;
+        height: 35px;
+        background-color: darkblue;
+        color: white;
+        border: none;
+        border-radius: 6px;
+      }
+
+      button:hover {
+        background-color: navy;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html">home</a>
+      <a href="../3/3-dars.html">3-dars uyga vazifa</a>
+      <a href="../3/3-dars-qoshimcha.html">3-dars qoshimcha uyga vazifa</a>
+      <a href="../4/4-classwork.html">4-dars darsdagi vazifa</a>
+      <a href="../4/4-homework.html">4-dars uyga vazifa</a>
+      <a href="../5/classwork.html">5-dars darsdagi vazifa</a>
+      <a href="../5/homework.html">5-dars uyga vazifa</a>
+      <a href="../6/classwork.html">6-dars darsdagi vazifa</a>
+      <a href="../6/homework.html">6-dars uyga vazifa</a>
+      <a href="../8/classwork.html">8-dars darsdagi vazifa</a>
+      <a href="../8/homework.html">8-dars uyga vazifa</a>
+      <a href="../9/classwork.html">9-dars darsdagi vazifa</a>
+      <a href="../9/homework.html">9-dars uyga vazifa</a>
+      <a href="../10/classwork.html">10-dars darsdagi vazifa</a>
+      <a href="../10/homework.html">10-dars uyga vazifa</a>
+    </nav>
+    <!-- HEADER -->
+    <div class="card">
+      <h1>Shaxsiy Portfolio</h1>
+      <p>Men <strong>Dasturchi</strong> va <mark>Web Designer</mark> man.</p>
+    </div>
+
+    <!-- ABOUT -->
+    <div class="card">
+      <h2>Men haqimda</h2>
+      <p>
+        Men <strong>HTML</strong>, <i>CSS</i>, <u>JavaScript</u> va
+        <span style="color: red">React</span> bilan ishlayman.
+      </p>
+
+      <ul>
+        <li>Loyihalarni mustaqil qila olaman</li>
+        <li>Deadline ga amal qilaman</li>
+        <li>Yangi texnologiyalarni tez o‘rganaman</li>
+      </ul>
+    </div>
+
+    <!-- EXPERIENCE TABLE -->
+    <div class="card">
+      <h2>Ish Tajribam</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Kompaniya</th>
+            <th>Lavozim</th>
+            <th>Yil</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>IT Center</td>
+            <td>Frontend Developer</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>Web Studio</td>
+            <td>UI Designer</td>
+            <td>2025</td>
+          </tr>
+          <tr>
+            <td>Startup</td>
+            <td>React Developer</td>
+            <td>2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- GOALS -->
+    <div class="card">
+      <h2>Kelajak Rejalarim</h2>
+
+      <ol>
+        <li>Senior Developer bo‘lish</li>
+        <li>Freelance ishlash</li>
+        <li>O‘z IT kompaniyamni ochish</li>
+      </ol>
+    </div>
+
+    <!-- PORTFOLIO -->
+    <div class="card">
+      <h2>Loyihalarim</h2>
+
+      <img src="project.jpg" alt="Loyiha rasmi" />
+      <br /><br />
+
+      <iframe
+        width="320"
+        height="200"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        title="YouTube video"
+      >
+      </iframe>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="card">
+      <h2>Ro‘yxatdan o‘tish</h2>
+
+      <form>
+        <label>Ism:</label><br />
+        <input type="text" /><br /><br />
+
+        <label>Email:</label><br />
+        <input type="email" /><br /><br />
+
+        <label>Telefon:</label><br />
+        <input type="text" /><br /><br />
+
+        <label>Jins:</label><br />
+        <input type="radio" name="gender" /> Erkak
+        <input type="radio" name="gender" /> Ayol <br /><br />
+
+        <label>Qaysi yo‘nalish sizga qiziq?</label><br />
+        <input type="checkbox" /> Frontend <input type="checkbox" /> Backend
+        <input type="checkbox" /> Mobile <br /><br />
+
+        <label>Tajriba darajangiz:</label><br />
+        <select>
+          <option>Boshlang‘ich</option>
+          <option>O‘rta</option>
+          <option>Yuqori</option>
+        </select>
+        <br /><br />
+
+        <button type="submit">Yuborish</button>
+      </form>
+    </div>
+  </body>
+</html>
