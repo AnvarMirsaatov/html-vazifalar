@@ -1,0 +1,30 @@
+li {
+  list-style: none;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 135px;
+  margin-bottom: 121px;
+}
+
+.box div p {
+  font-size: 64px;
+  color: white;
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 257px;
+}
+
+.left,
+.right {
+  padding: 187px 242px 188px 191px;
+  background: red;
+}
