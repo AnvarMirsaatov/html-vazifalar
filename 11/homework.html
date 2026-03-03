@@ -1,14 +1,137 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="../style.css" />
-  </head>
-  <body>
-    <nav>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Big Flex Homework</title>
+<link rel="stylesheet" href="../style.css">
+<style>
+
+body{
+  margin:0;
+  font-family: Arial;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:20px;
+  background: black;
+}
+
+.navbar a{
+  color:white;
+  text-decoration:none;
+  font-size:20px;
+}
+
+/* ================= SECTION 1 ================= */
+
+.section1{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:300px;
+  background: lightblue;
+}
+
+.section1 div{
+  width:150px;
+  height:150px;
+  background:red;
+}
+
+/* ================= SECTION 2 ================= */
+
+.section2{
+  display:flex;
+  justify-content: space-around;
+  align-items: start;
+  height:300px;
+  background: lightgreen;
+}
+
+.section2 div{
+  width:120px;
+  height:120px;
+  background:blue;
+}
+
+/* ================= SECTION 3 ================= */
+
+.section3{
+  display:flex;
+  justify-content: space-evenly;
+  align-items: end;
+  height:300px;
+  background: lightcoral;
+}
+
+.section3 div{
+  width:120px;
+  height:120px;
+  background:purple;
+}
+
+/* ================= SECTION 4 ================= */
+
+.section4{
+  display:flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  height:300px;
+  background: orange;
+}
+
+.section4 div{
+  width:120px;
+  background:black;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+/* ================= SECTION 5 ================= */
+
+.section5{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap:30px;
+  height:300px;
+  background: pink;
+}
+
+.section5 div{
+  width:120px;
+  height:120px;
+  background:green;
+}
+
+/* ================= FOOTER ================= */
+
+.footer{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  padding:30px;
+  background:black;
+}
+
+.footer a{
+  color:white;
+  text-decoration:none;
+}
+
+</style>
+</head>
+
+<body>
+  <nav>
       <a href="../index.html">home</a>
       <a href="../3/3-dars.html">3-dars uyga vazifa</a>
       <a href="../3/3-dars-qoshimcha.html">3-dars qoshimcha uyga vazifa</a>
@@ -26,5 +149,48 @@
       <a href="../11/classwork.html">11-dars darsdagi vazifa</a>
       <a href="../11/homework.html">11-dars uyga vazifa</a>
     </nav>
-  </body>
+<div class="navbar">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="section1">
+  <div></div>
+</div>
+
+<div class="section2">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div class="section3">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div class="section4">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+</div>
+
+<div class="section5">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<div class="footer">
+  <a href="#">Telegram</a>
+  <a href="#">Instagram</a>
+  <a href="#">YouTube</a>
+  <a href="#">GitHub</a>
+</div>
+
+</body>
 </html>

@@ -6,12 +6,12 @@ ul {
   display: flex;
   justify-content: space-around;
 }
-h1 {
+/* h1 {
   display: flex;
   justify-content: center;
   margin-top: 135px;
   margin-bottom: 121px;
-}
+} */
 
 .box div p {
   font-size: 64px;
@@ -27,4 +27,108 @@ h1 {
 .right {
   padding: 187px 242px 188px 191px;
   background: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navbar{
+  display: flex;
+  /* justify-content: center; */
+  /* justify-content: end; */
+/* justify-content: start; */
+/* justify-content: space-around; */
+/* justify-content: space-evenly; */
+/* justify-content: space-between; */
+justify-content: space-around;
+
+
+
+  /* align-items: stretch; */
+  /* align-items: start; */
+  /* align-items: center; */
+/* align-items: end; */
+
+
+}
+
+.navbar a{
+  color: black;
+  font-size: 32px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+h1{
+  margin: 151px 0 121px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around ;
+}
+
+.item{
+  padding: 187px 242px 188px 191px;
+  background: red;
+}
+
+.item p{
+  color: white;
+  font-size: 64px;
+}
+
+.footer{
+  display: flex;
+  margin-top: 257px;
+  justify-content: space-around;
+
+
+}
+
+.footer a{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 32px;
+  color: black;
 }
