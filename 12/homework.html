@@ -1,14 +1,13 @@
-<!DOCTYPE html>
-<html lang="uz">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎮 Qiziqarli Flexbox O‘yinlari</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="../style.css">
-</head>
-<body class="bg-gradient-to-r from-purple-200 to-pink-100 p-6 font-sans">
-    
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flex Mashqlar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+
+  <body class="bg-gray-800 p-10 space-y-16">
     <nav>
       <a href="../index.html">home</a>
       <a href="../3/3-dars.html">3-dars uyga vazifa</a>
@@ -29,101 +28,186 @@
       <a href="../12/classwork.html">12-dars darsdagi vazifa</a>
       <a href="../12/homework.html">12-dars uyga vazifa</a>
     </nav>
+    <!-- 1-vazifa -->
+    <!-- 3 ta boxni container markaziga joylashtir -->
+    <div
+      class="flex border-2 border-red-600 justify-center items-center gap-4 h-40 bg-white"
+    >
+      <div class="w-16 h-16 bg-blue-500"></div>
+      <div class="w-16 h-16 bg-blue-500"></div>
+      <div class="w-16 h-16 bg-blue-500"></div>
+    </div>
 
-  <h1 class="text-3xl font-bold mb-6 text-center text-purple-800">🎨 Qiziqarli Flexbox O‘yinlari 🎨</h1>
+    <!-- 2-vazifa -->
+    <!-- navbar yasang: chapda logo, o‘ngda menu -->
+    <div
+      class="flex border-2 border-red-600 justify-between items-center bg-white p-4"
+    >
+      <div class="font-bold">Logo</div>
+      <div class="flex border-2 border-red-600 gap-6">
+        <span>Home</span>
+        <span>About</span>
+        <span>Contact</span>
+      </div>
+    </div>
 
-  <!-- 1. Rangli Flex Boxlar -->
-  <section class="mb-8">
-    <h2 class="text-xl font-semibold mb-2">🌈 Rangli Flex Boxlar</h2>
-    <div class="flex flex-row flex-wrap justify-center items-center gap-4 h-64 border-4 border-purple-400 rounded-xl p-4 bg-purple-50">
-      <div class="w-20 h-20 bg-red-400 flex items-center justify-center text-white font-bold text-lg hover:scale-110 transition-transform rounded-lg">🟥</div>
-      <div class="w-20 h-20 bg-yellow-400 flex items-center justify-center text-white font-bold text-lg hover:scale-110 transition-transform rounded-lg">🟨</div>
-      <div class="w-20 h-20 bg-green-400 flex items-center justify-center text-white font-bold text-lg hover:scale-110 transition-transform rounded-lg">🟩</div>
-      <div class="w-20 h-20 bg-blue-400 flex items-center justify-center text-white font-bold text-lg hover:scale-110 transition-transform rounded-lg">🟦</div>
+    <!-- 3-vazifa -->
+    <!-- 4 ta card teng masofada joylashsin -->
+    <div class="flex border-2 border-red-600 justify-between bg-white p-4">
+      <div class="w-20 h-20 bg-red-400"></div>
+      <div class="w-20 h-20 bg-red-400"></div>
+      <div class="w-20 h-20 bg-red-400"></div>
+      <div class="w-20 h-20 bg-red-400"></div>
     </div>
-  </section>
 
-  <!-- 2. Yo‘nalish o‘yinlari -->
-  <section class="mb-8">
-    <h2 class="text-xl font-semibold mb-2">➡️ Yo‘nalish o‘yinlari</h2>
-    <div class="flex flex-row-reverse gap-4 mb-4">
-      <div class="w-20 h-20 bg-orange-400 flex items-center justify-center text-white font-bold rounded-lg hover:rotate-12 transition-transform">↪️</div>
-      <div class="w-20 h-20 bg-orange-500 flex items-center justify-center text-white font-bold rounded-lg hover:rotate-12 transition-transform">↪️</div>
-      <div class="w-20 h-20 bg-orange-600 flex items-center justify-center text-white font-bold rounded-lg hover:rotate-12 transition-transform">↪️</div>
+    <!-- 4-vazifa -->
+    <!-- elementlar ustun bo‘lib joylashsin -->
+    <div class="flex border-2 border-red-600 flex-col gap-4 bg-white p-4">
+      <div class="h-16 bg-green-400"></div>
+      <div class="h-16 bg-green-400"></div>
+      <div class="h-16 bg-green-400"></div>
     </div>
-    <div class="flex flex-col gap-4">
-      <div class="w-20 h-20 bg-pink-400 flex items-center justify-center text-white font-bold rounded-lg hover:scale-125 transition-transform">⬆️</div>
-      <div class="w-20 h-20 bg-pink-500 flex items-center justify-center text-white font-bold rounded-lg hover:scale-125 transition-transform">⬆️</div>
-      <div class="w-20 h-20 bg-pink-600 flex items-center justify-center text-white font-bold rounded-lg hover:scale-125 transition-transform">⬆️</div>
-    </div>
-  </section>
 
-  <!-- 3. Gap va Joylashuv o‘yinlari -->
-  <section class="mb-8">
-    <h2 class="text-xl font-semibold mb-2">🎯 Joylashuv o‘yinlari</h2>
-    <div class="flex justify-between items-center gap-4 mb-4 p-4 bg-green-50 border-4 border-green-400 rounded-xl h-32">
-      <div class="w-16 h-16 bg-green-400 flex items-center justify-center text-white font-bold rounded-lg hover:translate-y-2 transition-transform">1️⃣</div>
-      <div class="w-16 h-16 bg-green-500 flex items-center justify-center text-white font-bold rounded-lg hover:translate-y-2 transition-transform">2️⃣</div>
-      <div class="w-16 h-16 bg-green-600 flex items-center justify-center text-white font-bold rounded-lg hover:translate-y-2 transition-transform">3️⃣</div>
+    <!-- 5-vazifa -->
+    <!-- turli balandlikdagi elementlarni pastga tekisla -->
+    <div class="flex border-2 border-red-600 items-end gap-4 bg-white p-4 h-40">
+      <div class="w-16 h-16 bg-purple-500"></div>
+      <div class="w-16 h-24 bg-purple-500"></div>
+      <div class="w-16 h-32 bg-purple-500"></div>
     </div>
-    <div class="flex justify-around items-center gap-4 p-4 bg-green-50 border-4 border-green-400 rounded-xl h-32">
-      <div class="w-16 h-16 bg-green-700 flex items-center justify-center text-white font-bold rounded-lg hover:translate-x-2 transition-transform">4️⃣</div>
-      <div class="w-16 h-16 bg-green-800 flex items-center justify-center text-white font-bold rounded-lg hover:translate-x-2 transition-transform">5️⃣</div>
-      <div class="w-16 h-16 bg-green-900 flex items-center justify-center text-white font-bold rounded-lg hover:translate-x-2 transition-transform">6️⃣</div>
-    </div>
-  </section>
 
-  <!-- 4. Flex Wrap va Align Content -->
-  <section class="mb-8">
-    <h2 class="text-xl font-semibold mb-2">🌀 Wrap va Align Content o‘yinlari</h2>
-    <div class="flex flex-wrap content-around h-96 gap-4 p-4 bg-blue-50 border-4 border-blue-400 rounded-xl">
-      <div class="w-20 h-20 bg-blue-400 flex items-center justify-center text-white font-bold rounded-lg hover:scale-110 transition-transform">💧</div>
-      <div class="w-20 h-20 bg-blue-500 flex items-center justify-center text-white font-bold rounded-lg hover:scale-110 transition-transform">💦</div>
-      <div class="w-20 h-20 bg-blue-600 flex items-center justify-center text-white font-bold rounded-lg hover:scale-110 transition-transform">🌊</div>
-      <div class="w-20 h-20 bg-blue-700 flex items-center justify-center text-white font-bold rounded-lg hover:scale-110 transition-transform">🌊</div>
-      <div class="w-20 h-20 bg-blue-800 flex items-center justify-center text-white font-bold rounded-lg hover:scale-110 transition-transform">💧</div>
-      <div class="w-20 h-20 bg-blue-900 flex items-center justify-center text-white font-bold rounded-lg hover:scale-110 transition-transform">💦</div>
+    <!-- 6-vazifa -->
+    <!-- gallery: elementlar qatorga sig‘masa keyingi qatorga tushsin -->
+    <div class="flex border-2 border-red-600 flex-wrap gap-4 bg-white p-4 w-64">
+      <div class="w-20 h-20 bg-yellow-400"></div>
+      <div class="w-20 h-20 bg-yellow-400"></div>
+      <div class="w-20 h-20 bg-yellow-400"></div>
+      <div class="w-20 h-20 bg-yellow-400"></div>
+      <div class="w-20 h-20 bg-yellow-400"></div>
     </div>
-  </section>
 
-  <!-- 5. Space-between o‘yinlari -->
-  <section class="mb-8">
-    <h2 class="text-xl font-semibold mb-2">⚡ Space-between o‘yinlari</h2>
-    <div class="flex justify-between items-center gap-4 p-4 bg-yellow-50 border-4 border-yellow-400 rounded-xl h-32">
-      <div class="w-16 h-16 bg-yellow-400 flex items-center justify-center text-white font-bold rounded-lg hover:bg-yellow-600 transition-colors">🍎</div>
-      <div class="w-16 h-16 bg-yellow-500 flex items-center justify-center text-white font-bold rounded-lg hover:bg-yellow-600 transition-colors">🍌</div>
-      <div class="w-16 h-16 bg-yellow-600 flex items-center justify-center text-white font-bold rounded-lg hover:bg-yellow-600 transition-colors">🍊</div>
+    <!-- 7-vazifa -->
+    <!-- elementlar o‘rtaga joylashsin -->
+    <div class="flex border-2 border-red-600 justify-center gap-6 bg-white p-4">
+      <div class="w-20 h-20 bg-pink-400"></div>
+      <div class="w-20 h-20 bg-pink-400"></div>
     </div>
-  </section>
 
-  <!-- 6. Space-around va Evenly o‘yinlari -->
-  <section class="mb-8">
-    <h2 class="text-xl font-semibold mb-2">🎈 Space-around va Evenly</h2>
-    <div class="flex justify-around items-center gap-4 p-4 bg-pink-50 border-4 border-pink-400 rounded-xl h-32 mb-4">
-      <div class="w-16 h-16 bg-pink-400 flex items-center justify-center text-white font-bold rounded-lg hover:scale-125 transition-transform">🌟</div>
-      <div class="w-16 h-16 bg-pink-500 flex items-center justify-center text-white font-bold rounded-lg hover:scale-125 transition-transform">⭐</div>
-      <div class="w-16 h-16 bg-pink-600 flex items-center justify-center text-white font-bold rounded-lg hover:scale-125 transition-transform">✨</div>
+    <!-- 8-vazifa -->
+    <!-- elementlar ikki chetga joylashsin -->
+    <div class="flex border-2 border-red-600 justify-between bg-white p-4">
+      <div class="w-20 h-20 bg-indigo-500"></div>
+      <div class="w-20 h-20 bg-indigo-500"></div>
     </div>
-    <div class="flex justify-evenly items-center gap-4 p-4 bg-pink-50 border-4 border-pink-400 rounded-xl h-32">
-      <div class="w-16 h-16 bg-pink-700 flex items-center justify-center text-white font-bold rounded-lg hover:scale-125 transition-transform">🌈</div>
-      <div class="w-16 h-16 bg-pink-800 flex items-center justify-center text-white font-bold rounded-lg hover:scale-125 transition-transform">🌞</div>
-      <div class="w-16 h-16 bg-pink-900 flex items-center justify-center text-white font-bold rounded-lg hover:scale-125 transition-transform">🌙</div>
-    </div>
-  </section>
 
-  <!-- 7. Mix o‘yinlari -->
-  <section class="mb-8">
-    <h2 class="text-xl font-semibold mb-2">🎉 Mix o‘yinlari</h2>
-    <div class="flex flex-col md:flex-row flex-wrap justify-around items-center gap-4 p-4 bg-purple-50 border-4 border-purple-400 rounded-xl h-96">
-      <div class="w-20 h-20 bg-red-400 flex items-center justify-center text-white font-bold rounded-lg hover:rotate-12 transition-transform">🔥</div>
-      <div class="w-20 h-20 bg-orange-400 flex items-center justify-center text-white font-bold rounded-lg hover:translate-y-2 transition-transform">🌟</div>
-      <div class="w-20 h-20 bg-yellow-400 flex items-center justify-center text-white font-bold rounded-lg hover:scale-125 transition-transform">🌈</div>
-      <div class="w-20 h-20 bg-green-400 flex items-center justify-center text-white font-bold rounded-lg hover:rotate-12 transition-transform">🍀</div>
-      <div class="w-20 h-20 bg-blue-400 flex items-center justify-center text-white font-bold rounded-lg hover:translate-x-2 transition-transform">💧</div>
-      <div class="w-20 h-20 bg-indigo-400 flex items-center justify-center text-white font-bold rounded-lg hover:scale-110 transition-transform">🌊</div>
-      <div class="w-20 h-20 bg-purple-400 flex items-center justify-center text-white font-bold rounded-lg hover:rotate-12 transition-transform">🍇</div>
+    <!-- 9-vazifa -->
+    <!-- elementlar teng bo‘sh joy bilan joylashsin -->
+    <div class="flex border-2 border-red-600 justify-evenly bg-white p-4">
+      <div class="w-16 h-16 bg-orange-500"></div>
+      <div class="w-16 h-16 bg-orange-500"></div>
+      <div class="w-16 h-16 bg-orange-500"></div>
     </div>
-  </section>
 
-</body>
+    <!-- 10-vazifa -->
+    <!-- elementlar orasida katta masofa -->
+    <div class="flex border-2 border-red-600 gap-12 bg-white p-4">
+      <div class="w-16 h-16 bg-blue-600"></div>
+      <div class="w-16 h-16 bg-blue-600"></div>
+      <div class="w-16 h-16 bg-blue-600"></div>
+    </div>
+
+    <!-- 11-vazifa -->
+    <!-- elementlar o‘ng tomonda joylashsin -->
+    <div class="flex border-2 border-red-600 justify-end gap-4 bg-white p-4">
+      <div class="w-16 h-16 bg-green-500"></div>
+      <div class="w-16 h-16 bg-green-500"></div>
+    </div>
+
+    <!-- 12-vazifa -->
+    <!-- elementlar chap tomonda -->
+    <div class="flex border-2 border-red-600 justify-start gap-4 bg-white p-4">
+      <div class="w-16 h-16 bg-red-500"></div>
+      <div class="w-16 h-16 bg-red-500"></div>
+    </div>
+
+    <!-- 13-vazifa -->
+    <!-- column layout markazga joylashsin -->
+    <div
+      class="flex border-2 border-red-600 flex-col items-center gap-4 bg-white p-4"
+    >
+      <div class="w-20 h-20 bg-purple-400"></div>
+      <div class="w-20 h-20 bg-purple-400"></div>
+    </div>
+
+    <!-- 14-vazifa -->
+    <!-- column va vertikal markaz -->
+    <div
+      class="flex border-2 border-red-600 flex-col justify-center h-40 gap-4 bg-white"
+    >
+      <div class="h-16 bg-teal-400"></div>
+      <div class="h-16 bg-teal-400"></div>
+    </div>
+
+    <!-- 15-vazifa -->
+    <!-- elementlar teskari qator -->
+    <div
+      class="flex border-2 border-red-600 flex-row-reverse gap-4 bg-white p-4"
+    >
+      <div class="w-16 h-16 bg-gray-500"></div>
+      <div class="w-16 h-16 bg-gray-500"></div>
+      <div class="w-16 h-16 bg-gray-500"></div>
+    </div>
+
+    <!-- 16-vazifa -->
+    <!-- elementlar teskari column -->
+    <div
+      class="flex border-2 border-red-600 flex-col-reverse gap-4 bg-white p-4"
+    >
+      <div class="h-16 bg-blue-400"></div>
+      <div class="h-16 bg-blue-400"></div>
+      <div class="h-16 bg-blue-400"></div>
+    </div>
+
+    <!-- 17-vazifa -->
+    <!-- wrap va markaz -->
+    <div
+      class="flex border-2 border-red-600 flex-wrap justify-center gap-4 bg-white p-4 w-64"
+    >
+      <div class="w-20 h-20 bg-pink-500"></div>
+      <div class="w-20 h-20 bg-pink-500"></div>
+      <div class="w-20 h-20 bg-pink-500"></div>
+      <div class="w-20 h-20 bg-pink-500"></div>
+    </div>
+
+    <!-- 18-vazifa -->
+    <!-- barcha elementlar vertikal markaz -->
+    <div
+      class="flex border-2 border-red-600 items-center gap-4 h-32 bg-white p-4"
+    >
+      <div class="w-16 h-16 bg-yellow-500"></div>
+      <div class="w-16 h-24 bg-yellow-500"></div>
+      <div class="w-16 h-20 bg-yellow-500"></div>
+    </div>
+
+    <!-- 19-vazifa -->
+    <!-- header layout -->
+    <div
+      class="flex border-2 border-red-600 justify-between items-center bg-black text-white p-4"
+    >
+      <div>Logo</div>
+      <div class="flex border-2 border-red-600 gap-6">
+        <span>Services</span>
+        <span>Blog</span>
+        <span>Login</span>
+      </div>
+    </div>
+
+    <!-- 20-vazifa -->
+    <!-- card list -->
+    <div class="flex border-2 border-red-600 gap-6 bg-white p-6">
+      <div class="w-32 h-32 bg-gray-300"></div>
+      <div class="w-32 h-32 bg-gray-300"></div>
+      <div class="w-32 h-32 bg-gray-300"></div>
+    </div>
+  </body>
 </html>
