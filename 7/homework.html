@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Portfolio</title>
+
+    <style>
+        body {
+            background-color: #f2f2f2;
+            margin: 20px;
+            padding: 20px;
+            color: #111;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            background-color: darkblue;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            background-color: lightblue;
+            color: darkblue;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: darkblue;
+            margin-top: 20px;
+        }
+
+        p {
+            background-color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+
+        div {
+            background-color: white;
+            width: 85%;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        ul {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 80%;
+            margin: auto;
+        }
+
+        a {
+            color: blue;
+        }
+
+        table {
+            width: 85%;
+            margin: 20px auto;
+            text-align: center;
+            border: 2px solid black;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th {
+            background-color: darkblue;
+            color: white;
+            padding: 15px;
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 12px;
+            border: 1px solid black;
+        }
+
+        tfoot td {
+            background-color: lightgray;
+            text-align: center;
+            padding: 15px;
+        }
+
+        img {
+            width: 300px;
+            height: 200px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        iframe {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        video {
+            width: 400px;
+            height: 250px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        hr {
+            margin-top: 30px;
+        }
+
+        mark {
+            background-color: yellow;
+        }
+
+        strong {
+            color: darkred;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Frontend Developer Portfolio</h1>
+
+    <p>
+        Ushbu sahifa frontend dasturchi haqida batafsil ma’lumot beradi.
+        Sayt HTML, CSS va JavaScript asosida qurilgan.
+        Maqsad — web texnologiyalarni amaliy tarzda tushuntirish.
+    </p>
+
+    <h2>Men haqimda</h2>
+
+    <p>
+        Men frontend dasturchiman va zamonaviy web saytlar yarataman.
+        Asosiy yo‘nalishim — <strong>React</strong> va <strong>Next.js</strong>.
+        Men foydalanuvchi uchun qulay va tez ishlaydigan interfeyslar yaratishga harakat qilaman.
+    </p>
+
+    <p>
+        Dasturlashda eng muhim narsa — doimiy mashq qilish va real loyihalar qilishdir.
+        Har bir yangi loyiha tajribani oshiradi va fikrlashni rivojlantiradi.
+    </p>
+
+    <h2>Bilimlarim</h2>
+
+    <ul>
+        <li>HTML5 — sahifa strukturasi</li>
+        <li>CSS3 — dizayn va styling</li>
+        <li>JavaScript — interaktivlik</li>
+        <li>React JS — komponentlar bilan ishlash</li>
+        <li>Next JS — server side rendering</li>
+    </ul>
+
+    <h2>Foydali Link</h2>
+
+    <p>
+        O‘rganish uchun eng yaxshi manba:
+        <a href="https://developer.mozilla.org/" target="_blank">
+            MDN Web Docs
+        </a>
+    </p>
+
+    <hr>
+
+    <h2>Birinchi Jadval</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Ism</th>
+                <th>Kasb</th>
+                <th>Yosh</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Anvar</td>
+                <td>Frontend Developer</td>
+                <td>21</td>
+            </tr>
+
+            <tr>
+                <td>Imron</td>
+                <td>Designer</td>
+                <td>20</td>
+            </tr>
+
+            <tr>
+                <td>Humoyun</td>
+                <td>Backend Developer</td>
+                <td>22</td>
+            </tr>
+
+            <tr>
+                <td>Habibulloh</td>
+                <td>Teacher</td>
+                <td>25</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Birinchi jadval yakunlandi</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <h2>Media Bo‘limi</h2>
+
+    <div>
+
+        <h3>Rasm (img)</h3>
+
+        <p>
+            <strong>img</strong> tagi HTML sahifaga rasm qo‘shish uchun ishlatiladi.
+            Rasm <mark>src</mark> orqali yuklanadi, <mark>alt</mark> esa alternativ matn beradi.
+            Bu SEO va accessibility uchun juda muhim.
+        </p>
+
+        <img src="https://picsum.photos/300/200" alt="Nature image">
+
+        <h3>Iframe</h3>
+
+        <p>
+            <strong>iframe</strong> boshqa sayt yoki video sahifani ichida ko‘rsatadi.
+            Ko‘pincha YouTube video va Google Maps uchun ishlatiladi.
+        </p>
+
+        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+
+        <h3>Video</h3>
+
+        <p>
+            <strong>video</strong> tagi lokal video fayllarni ko‘rsatish uchun ishlatiladi.
+            controls qo‘shilsa play va pause tugmalari chiqadi.
+        </p>
+
+        <video controls>
+            <source src="movie.mp4" type="video/mp4">
+        </video>
+
+    </div>
+
+    <hr>
+
+    <h2>Ikkinchi Jadval</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Texnologiya</th>
+                <th>Daraja</th>
+                <th>Tajriba</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>HTML</td>
+                <td>Yuqori</td>
+                <td>2 yil</td>
+            </tr>
+
+            <tr>
+                <td>CSS</td>
+                <td>Yuqori</td>
+                <td>2 yil</td>
+            </tr>
+
+            <tr>
+                <td>JavaScript</td>
+                <td>O‘rta</td>
+                <td>1 yil</td>
+            </tr>
+
+            <tr>
+                <td>React</td>
+                <td>O‘rta</td>
+                <td>1 yil</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Ikkinchi jadval yakunlandi</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <hr>
+
+    <h2>Xulosa</h2>
+
+    <p>
+        Frontend dasturchi bo‘lish uchun faqat kod yozish emas,
+        balki doimiy o‘rganish va amaliy loyiha qilish muhim.
+        Har bir yangi loyiha seni kuchliroq qiladi.
+    </p>
+
+</body>
+
+</html>
