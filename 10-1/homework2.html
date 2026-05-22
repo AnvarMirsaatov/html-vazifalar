@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Vazifasi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ececec;
+            padding: 40px;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+        }
+
+        /* HEADER */
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 80px;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 40px;
+        }
+
+        /* SECTION TITLE */
+
+        .title {
+            text-align: center;
+            font-size: 50px;
+            margin-bottom: 60px;
+        }
+
+        /* SECTION 1 */
+
+        .section-1 {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+
+            margin-bottom: 100px;
+        }
+
+        .big-card {
+            width: 400px;
+            height: 300px;
+            background-color: red;
+            color: white;
+            font-size: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* SECTION 2 */
+
+        .section-2 {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+            margin-bottom: 100px;
+        }
+
+        .medium-card {
+            width: 320px;
+            height: 250px;
+            background-color: crimson;
+            color: white;
+            font-size: 35px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* SECTION 3 */
+
+        .section-3 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+
+            margin-bottom: 100px;
+        }
+
+        .small-card {
+            width: 250px;
+            height: 220px;
+            background-color: tomato;
+            color: white;
+            font-size: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* SECTION 4 */
+
+        .section-4 {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+
+            margin-bottom: 100px;
+        }
+
+        .mini-card {
+            width: 200px;
+            height: 180px;
+            background-color: darkred;
+            color: white;
+            font-size: 25px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-top: 50px;
+        }
+
+        .footer-menu {
+            display: flex;
+            gap: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <h1>Logo</h1>
+
+            <div class="navbar">
+                <h3>Navbar</h3>
+                <h3>Navbar</h3>
+                <h3>Navbar</h3>
+                <h3>Navbar</h3>
+                <h3>Navbar</h3>
+            </div>
+
+        </div>
+
+        <!-- SECTION 1 -->
+
+        <h1 class="title">1 - SECTION</h1>
+
+        <div class="section-1">
+
+            <div class="big-card">
+                Left
+            </div>
+
+            <div class="big-card">
+                Right
+            </div>
+
+        </div>
+
+        <!-- SECTION 2 -->
+
+        <h1 class="title">2 - SECTION</h1>
+
+        <div class="section-2">
+
+            <div class="medium-card">
+                Card 1
+            </div>
+
+            <div class="medium-card">
+                Card 2
+            </div>
+
+            <div class="medium-card">
+                Card 3
+            </div>
+
+        </div>
+
+        <!-- SECTION 3 -->
+
+        <h1 class="title">3 - SECTION</h1>
+
+        <div class="section-3">
+
+            <div class="small-card">
+                Box 1
+            </div>
+
+            <div class="small-card">
+                Box 2
+            </div>
+
+            <div class="small-card">
+                Box 3
+            </div>
+
+            <div class="small-card">
+                Box 4
+            </div>
+
+            <div class="small-card">
+                Box 5
+            </div>
+
+            <div class="small-card">
+                Box 6
+            </div>
+
+        </div>
+
+        <!-- SECTION 4 -->
+
+        <h1 class="title">4 - SECTION</h1>
+
+        <div class="section-4">
+
+            <div class="mini-card">
+                Item 1
+            </div>
+
+            <div class="mini-card">
+                Item 2
+            </div>
+
+            <div class="mini-card">
+                Item 3
+            </div>
+
+            <div class="mini-card">
+                Item 4
+            </div>
+
+            <div class="mini-card">
+                Item 5
+            </div>
+
+            <div class="mini-card">
+                Item 6
+            </div>
+
+            <div class="mini-card">
+                Item 7
+            </div>
+
+            <div class="mini-card">
+                Item 8
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+
+            <h1>Logo</h1>
+
+            <div class="footer-menu">
+                <h3>Footer</h3>
+                <h3>Footer</h3>
+                <h3>Footer</h3>
+                <h3>Footer</h3>
+                <h3>Footer</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
