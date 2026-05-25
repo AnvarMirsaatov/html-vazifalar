@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Murakkab Flexbox Vazifasi</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #e9e9e9;
+            padding: 40px;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+        }
+
+        /* HEADER */
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-bottom: 80px;
+        }
+
+        .logo {
+            width: 180px;
+            height: 70px;
+            background-color: crimson;
+            color: white;
+            font-size: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar {
+            display: flex;
+            gap: 25px;
+        }
+
+        .nav-item {
+            width: 100px;
+            height: 50px;
+            background-color: tomato;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* HERO */
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+            margin-bottom: 100px;
+        }
+
+        .hero-left {
+            width: 65%;
+            height: 400px;
+            background-color: darkred;
+            color: white;
+            font-size: 50px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-right {
+            width: 35%;
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .small-box {
+            flex: 1;
+            background-color: crimson;
+            color: white;
+            font-size: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* SECTION TITLE */
+
+        .title {
+            text-align: center;
+            font-size: 45px;
+            margin-bottom: 50px;
+        }
+
+        /* SERVICES */
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+            margin-bottom: 100px;
+        }
+
+        .service-card {
+            width: 33%;
+            height: 300px;
+            background-color: firebrick;
+            color: white;
+            font-size: 35px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* GALLERY */
+
+        .gallery {
+            display: flex;
+            gap: 25px;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            margin-bottom: 100px;
+        }
+
+        .gallery-box {
+            width: 350px;
+            height: 220px;
+            background-color: indianred;
+            color: white;
+            font-size: 35px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* TEAM */
+
+        .team {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 30px;
+
+            margin-bottom: 100px;
+        }
+
+        .member {
+            width: 250px;
+            height: 320px;
+            background-color: brown;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .circle {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        /* BLOG */
+
+        .blog {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+            margin-bottom: 100px;
+        }
+
+        .blog-left {
+            width: 70%;
+            height: 350px;
+            background-color: darkred;
+            color: white;
+            font-size: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .blog-right {
+            width: 30%;
+
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .blog-card {
+            flex: 1;
+            background-color: crimson;
+            color: white;
+            font-size: 25px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            margin-top: 50px;
+        }
+
+        .footer-menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-item {
+            width: 90px;
+            height: 45px;
+            background-color: tomato;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <div class="logo">
+                LOGO
+            </div>
+
+            <div class="navbar">
+
+                <div class="nav-item">
+                    Home
+                </div>
+
+                <div class="nav-item">
+                    About
+                </div>
+
+                <div class="nav-item">
+                    Blog
+                </div>
+
+                <div class="nav-item">
+                    Shop
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- HERO -->
+
+        <div class="hero">
+
+            <div class="hero-left">
+                HERO
+            </div>
+
+            <div class="hero-right">
+
+                <div class="small-box">
+                    Box 1
+                </div>
+
+                <div class="small-box">
+                    Box 2
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SERVICES -->
+
+        <h1 class="title">
+            SERVICES
+        </h1>
+
+        <div class="services">
+
+            <div class="service-card">
+                Service 1
+            </div>
+
+            <div class="service-card">
+                Service 2
+            </div>
+
+            <div class="service-card">
+                Service 3
+            </div>
+
+        </div>
+
+        <!-- GALLERY -->
+
+        <h1 class="title">
+            GALLERY
+        </h1>
+
+        <div class="gallery">
+
+            <div class="gallery-box">
+                Image 1
+            </div>
+
+            <div class="gallery-box">
+                Image 2
+            </div>
+
+            <div class="gallery-box">
+                Image 3
+            </div>
+
+            <div class="gallery-box">
+                Image 4
+            </div>
+
+            <div class="gallery-box">
+                Image 5
+            </div>
+
+            <div class="gallery-box">
+                Image 6
+            </div>
+
+        </div>
+
+        <!-- TEAM -->
+
+        <h1 class="title">
+            OUR TEAM
+        </h1>
+
+        <div class="team">
+
+            <div class="member">
+
+                <div class="circle"></div>
+
+                <h2>Name</h2>
+
+                <p>Frontend Developer</p>
+
+            </div>
+
+            <div class="member">
+
+                <div class="circle"></div>
+
+                <h2>Name</h2>
+
+                <p>UI Designer</p>
+
+            </div>
+
+            <div class="member">
+
+                <div class="circle"></div>
+
+                <h2>Name</h2>
+
+                <p>Backend Developer</p>
+
+            </div>
+
+            <div class="member">
+
+                <div class="circle"></div>
+
+                <h2>Name</h2>
+
+                <p>Project Manager</p>
+
+            </div>
+
+        </div>
+
+        <!-- BLOG -->
+
+        <h1 class="title">
+            BLOG
+        </h1>
+
+        <div class="blog">
+
+            <div class="blog-left">
+                BIG ARTICLE
+            </div>
+
+            <div class="blog-right">
+
+                <div class="blog-card">
+                    News 1
+                </div>
+
+                <div class="blog-card">
+                    News 2
+                </div>
+
+                <div class="blog-card">
+                    News 3
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+
+            <div class="logo">
+                LOGO
+            </div>
+
+            <div class="footer-menu">
+
+                <div class="footer-item">
+                    Info
+                </div>
+
+                <div class="footer-item">
+                    Help
+                </div>
+
+                <div class="footer-item">
+                    Blog
+                </div>
+
+                <div class="footer-item">
+                    Contact
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
