@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-box {
+            width: 400px;
+
+            background-color: white;
+
+            margin: 50px;
+
+            padding: 30px;
+
+            border: 1px solid #cccccc;
+
+            border-radius: 10px;
+        }
+
+        h1 {
+            margin-bottom: 25px;
+
+            font-size: 30px;
+
+            color: #222222;
+        }
+
+        .input-box {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 18px;
+
+            color: #333333;
+        }
+
+        input {
+            width: 100%;
+
+            margin-top: 8px;
+
+            padding: 12px;
+
+            border: 1px solid #bbbbbb;
+
+            border-radius: 6px;
+
+            font-size: 16px;
+        }
+
+        .radio-box {
+            margin-top: 10px;
+        }
+
+        .checkbox-box {
+            margin-top: 10px;
+        }
+
+        .radio-box input,
+        .checkbox-box input {
+            width: 20px;
+            height: 20px;
+
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+
+            padding: 12px;
+
+            margin-top: 10px;
+
+            border: 1px solid #999999;
+
+            border-radius: 6px;
+
+            font-size: 16px;
+        }
+
+        .submit-btn {
+            background-color: #0077ff;
+
+            color: white;
+        }
+
+        .reset-btn {
+            background-color: #dddddd;
+
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-box">
+
+        <h1>Registratsiya Formasi</h1>
+
+        <form>
+
+            <!-- Ism -->
+            <div class="input-box">
+
+                <label for="name">
+                    Ism
+                </label>
+
+                <input 
+                    type="text"
+                    id="name"
+                    placeholder="Ismingizni kiriting"
+                    required
+                >
+
+            </div>
+
+            <!-- Familiya -->
+            <div class="input-box">
+
+                <label for="surname">
+                    Familiya
+                </label>
+
+                <input 
+                    type="text"
+                    id="surname"
+                    placeholder="Familiyangizni kiriting"
+                >
+
+            </div>
+
+            <!-- Email -->
+            <div class="input-box">
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input 
+                    type="email"
+                    id="email"
+                    placeholder="example@gmail.com"
+                    required
+                >
+
+            </div>
+
+            <!-- Password -->
+            <div class="input-box">
+
+                <label for="password">
+                    Parol
+                </label>
+
+                <input 
+                    type="password"
+                    id="password"
+                    placeholder="Kamida 8 ta belgi"
+                    minlength="8"
+                    required
+                >
+
+            </div>
+
+            <!-- Yosh -->
+            <div class="input-box">
+
+                <label for="age">
+                    Yosh
+                </label>
+
+                <input 
+                    type="number"
+                    id="age"
+                    placeholder="Yoshingizni kiriting"
+                    min="16"
+                    max="80"
+                >
+
+            </div>
+
+            <!-- Radio -->
+            <div class="input-box">
+
+                <label>
+                    Jins
+                </label>
+
+                <div class="radio-box">
+
+                    <input 
+                        type="radio"
+                        id="male"
+                        name="gender"
+                    >
+
+                    <label for="male">
+                        Erkak
+                    </label>
+
+                </div>
+
+                <div class="radio-box">
+
+                    <input 
+                        type="radio"
+                        id="female"
+                        name="gender"
+                    >
+
+                    <label for="female">
+                        Ayol
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- Checkbox -->
+            <div class="input-box">
+
+                <label>
+                    Qiziqishlar
+                </label>
+
+                <div class="checkbox-box">
+
+                    <input 
+                        type="checkbox"
+                        id="html"
+                    >
+
+                    <label for="html">
+                        HTML
+                    </label>
+
+                </div>
+
+                <div class="checkbox-box">
+
+                    <input 
+                        type="checkbox"
+                        id="css"
+                    >
+
+                    <label for="css">
+                        CSS
+                    </label>
+
+                </div>
+
+                <div class="checkbox-box">
+
+                    <input 
+                        type="checkbox"
+                        id="js"
+                    >
+
+                    <label for="js">
+                        JavaScript
+                    </label>
+
+                </div>
+
+                <div class="checkbox-box">
+
+                    <input 
+                        type="checkbox"
+                        id="react"
+                    >
+
+                    <label for="react">
+                        React
+                    </label>
+
+                </div>
+
+            </div>
+
+            <!-- Buttons -->
+
+            <button 
+                type="submit"
+                class="submit-btn"
+            >
+                Yuborish
+            </button>
+
+            <button 
+                type="reset"
+                class="reset-btn"
+            >
+                Tozalash
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
