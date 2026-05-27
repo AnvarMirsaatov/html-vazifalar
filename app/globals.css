@@ -1,0 +1,15 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+nav {
+  @apply flex items-center justify-center gap-2.5 flex-wrap bg-gray-900 text-center px-4 py-4;
+}
+
+nav a {
+  @apply text-white no-underline mx-2.5 inline-block hover:text-yellow-400 transition-colors text-sm;
+}
+
+.container {
+  @apply w-10/12 mx-auto;
+}

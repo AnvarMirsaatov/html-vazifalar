@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Academy</title>
+
+    <style>
+        body {
+            background-color: #1e1e2f;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 25px;
+            color: white;
+        }
+
+        h1 {
+            background: linear-gradient(90deg, #8e2de2, #4a00e0);
+            padding: 25px;
+            text-align: center;
+            border-radius: 15px;
+            font-size: 40px;
+        }
+
+        h2 {
+            background-color: #00b894;
+            padding: 12px;
+            border-radius: 10px;
+            color: white;
+            margin-top: 40px;
+        }
+
+        h3 {
+            color: #00cec9;
+            margin-top: 25px;
+        }
+
+        p {
+            background-color: #2d3436;
+            padding: 15px;
+            border-radius: 10px;
+            line-height: 1.8;
+            border-left: 5px solid #00cec9;
+        }
+
+        .card {
+            background-color: #2f3640;
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 25px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.4);
+        }
+
+        ul {
+            background-color: #2d3436;
+            padding: 25px 45px;
+            border-radius: 10px;
+        }
+
+        li {
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 25px;
+            background-color: #2d3436;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: #6c5ce7;
+            color: white;
+            padding: 15px;
+        }
+
+        td {
+            padding: 14px;
+            text-align: center;
+            border: 1px solid #444;
+        }
+
+        tfoot td {
+            background-color: #00b894;
+            font-weight: bold;
+        }
+
+        img {
+            width: 280px;
+            height: 180px;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        video {
+            width: 100%;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        a {
+            color: #74b9ff;
+            font-weight: bold;
+        }
+
+        mark {
+            background-color: #ffeaa7;
+            color: black;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: linear-gradient(to right, #00cec9, #6c5ce7);
+            margin-top: 45px;
+        }
+
+        strong {
+            color: #fd79a8;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>Digital Academy</h1>
+
+    <div class="card">
+
+        <h2>Frontend Yo‘nalishi</h2>
+
+        <p>
+            Frontend dasturlash foydalanuvchi ko‘radigan barcha sahifalarni yaratadi.
+            Saytning dizayni, tugmalari, menyulari va animatsiyalari frontend orqali ishlaydi.
+        </p>
+
+        <p>
+            Eng mashhur frontend texnologiyalar:
+            <strong>HTML</strong>,
+            <strong>CSS</strong>,
+            <strong>JavaScript</strong>,
+            <strong>React JS</strong>.
+        </p>
+
+    </div>
+
+    <h2>Frontend Dasturchi Vazifalari</h2>
+
+    <ul>
+        <li>Responsive sayt yaratish</li>
+        <li>UI/UX dizayn bilan ishlash</li>
+        <li>Animatsiyalar qo‘shish</li>
+        <li>API bilan ishlash</li>
+        <li>React komponentlar yozish</li>
+        <li>Performance optimizatsiya qilish</li>
+    </ul>
+
+    <hr>
+
+    <div class="card">
+
+        <h2>HTML Media Elementlari</h2>
+
+        <h3>img tegi</h3>
+
+        <p>
+            <strong>img</strong> tegi rasm chiqaradi.
+            <mark>alt</mark> atributi rasm ochilmasa chiqadigan matn hisoblanadi.
+        </p>
+
+        <img src="https://picsum.photos/280/180" alt="Nature image">
+
+        <h3>iframe tegi</h3>
+
+        <p>
+            <strong>iframe</strong> boshqa sayt yoki videoni sahifaga joylashtiradi.
+        </p>
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/LMVH8edITPY?si=x50fzvbgoXmfgRcv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    
+
+
+        <h3>video tegi</h3>
+
+        <p>
+            <strong>video</strong> tegi lokal videolarni ko‘rsatadi.
+            controls atributi boshqaruv tugmalarini chiqaradi.
+        </p>
+
+    <video src="../movie.mp4" controls height="500px"></video>
+
+    </div>
+
+    <hr>
+
+    <h2>O‘quvchilar Jadvali</h2>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Ism</th>
+                <th>Yo‘nalish</th>
+                <th>Tajriba</th>
+                <th>Loyiha</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Anvar</td>
+                <td>Frontend</td>
+                <td>2 yil</td>
+                <td>Portfolio</td>
+            </tr>
+
+            <tr>
+                <td>Aziza</td>
+                <td>UI/UX</td>
+                <td>1 yil</td>
+                <td>Mobile Design</td>
+            </tr>
+
+            <tr>
+                <td>Sardor</td>
+                <td>Backend</td>
+                <td>3 yil</td>
+                <td>CRM System</td>
+            </tr>
+
+            <tr>
+                <td>Jasur</td>
+                <td>Mobile</td>
+                <td>2 yil</td>
+                <td>Taxi App</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">Jadval yakunlandi</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <hr>
+
+    <div class="card">
+
+        <h2>Foydali Platformalar</h2>
+
+        <p>
+            Web dasturlashni o‘rganish uchun
+            <a href="https://developer.mozilla.org/" target="_blank">
+                MDN Web Docs
+            </a>
+            juda foydali platforma hisoblanadi.
+        </p>
+
+        <p>
+            Kodlarni online yozish uchun
+            <a href="https://codepen.io/" target="_blank">
+                CodePen
+            </a>
+            platformasi ishlatiladi.
+        </p>
+
+    </div>
+
+    <hr>
+
+    <div class="card">
+
+        <h2>Xulosa</h2>
+
+        <p>
+            Kuchli dasturchi bo‘lish uchun nazariya bilan birga amaliyot ham juda muhim.
+            Har kuni kichik loyiha qilish tajribani tez oshiradi.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
