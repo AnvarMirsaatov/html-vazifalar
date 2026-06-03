@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Flexbox Project</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #e5e5e5;
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        .container {
+            width: 1400px;
+            margin: auto;
+            background: white;
+            padding: 40px;
+        }
+
+        .title {
+            font-size: 42px;
+            margin: 70px 0 40px;
+            color: #333;
+        }
+
+        /* HEADER */
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 220px;
+            height: 80px;
+            background: darkred;
+            color: white;
+            font-size: 32px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-item {
+            width: 120px;
+            height: 55px;
+            background: crimson;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* HERO */
+
+        .hero img {
+            width: 100%;
+            height: 600px;
+            border-radius: 12px;
+        }
+
+        /* FEATURES */
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .feature {
+            width: 430px;
+            height: 220px;
+            background: firebrick;
+            color: white;
+            font-size: 32px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* VIDEO */
+
+        .video iframe {
+            width: 100%;
+            height: 700px;
+            border-radius: 12px;
+        }
+
+        /* MAP */
+
+        .map iframe {
+            width: 100%;
+            height: 600px;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        /* GALLERY */
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 320px;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        /* BLOG */
+
+        .blogs {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .blog {
+            height: 220px;
+            background: brown;
+            color: white;
+            font-size: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* TEAM */
+
+        .team {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .member {
+            width: 310px;
+            background: tomato;
+            padding: 15px;
+            border-radius: 12px;
+        }
+
+        .member img {
+            width: 100%;
+            height: 250px;
+            border-radius: 10px;
+        }
+
+        .member h2 {
+            margin-top: 15px;
+        }
+
+        .member p {
+            margin-top: 10px;
+        }
+
+        /* CONTACT FORM */
+
+        .contact {
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            width: 900px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input,
+        textarea {
+            padding: 15px;
+            font-size: 18px;
+            border: 1px solid gray;
+            border-radius: 6px;
+        }
+
+        textarea {
+            height: 200px;
+            resize: none;
+        }
+
+        button {
+            height: 60px;
+            background: darkred;
+            color: white;
+            border: none;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        /* FOOTER */
+
+        .footer {
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .footer-menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .footer-item {
+            width: 120px;
+            height: 55px;
+            background: darkred;
+            color: white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+
+        <div class="header">
+
+            <div class="logo">LOGO</div>
+
+            <div class="menu">
+                <div class="menu-item">HOME</div>
+                <div class="menu-item">ABOUT</div>
+                <div class="menu-item">SERVICE</div>
+                <div class="menu-item">BLOG</div>
+                <div class="menu-item">CONTACT</div>
+                <div class="menu-item">LOGIN</div>
+            </div>
+
+        </div>
+
+        <!-- HERO -->
+
+        <h1 class="title">HERO SECTION</h1>
+
+        <div class="hero">
+            <img src="https://picsum.photos/1400/600" alt="">
+        </div>
+
+        <!-- FEATURES -->
+
+        <h1 class="title">FEATURES</h1>
+
+        <div class="features">
+            <div class="feature">BOX 1</div>
+            <div class="feature">BOX 2</div>
+            <div class="feature">BOX 3</div>
+            <div class="feature">BOX 4</div>
+            <div class="feature">BOX 5</div>
+            <div class="feature">BOX 6</div>
+        </div>
+
+        <!-- YOUTUBE -->
+
+        <h1 class="title">YOUTUBE VIDEO</h1>
+
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                title="YouTube video player"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- GOOGLE MAP -->
+
+        <h1 class="title">GOOGLE MAP</h1>
+
+        <div class="map">
+            <iframe
+                src="https://maps.google.com/maps?q=tashkent&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+        </div>
+
+        <!-- GALLERY -->
+
+        <h1 class="title">GALLERY</h1>
+
+        <div class="gallery">
+
+            <img src="https://picsum.photos/320/250?1" alt="">
+            <img src="https://picsum.photos/320/250?2" alt="">
+            <img src="https://picsum.photos/320/250?3" alt="">
+            <img src="https://picsum.photos/320/250?4" alt="">
+            <img src="https://picsum.photos/320/250?5" alt="">
+            <img src="https://picsum.photos/320/250?6" alt="">
+            <img src="https://picsum.photos/320/250?7" alt="">
+            <img src="https://picsum.photos/320/250?8" alt="">
+
+        </div>
+
+        <!-- BLOG -->
+
+        <h1 class="title">BLOGS</h1>
+
+        <div class="blogs">
+            <div class="blog">BLOG CARD 1</div>
+            <div class="blog">BLOG CARD 2</div>
+            <div class="blog">BLOG CARD 3</div>
+            <div class="blog">BLOG CARD 4</div>
+        </div>
+
+        <!-- TEAM -->
+
+        <h1 class="title">OUR TEAM</h1>
+
+        <div class="team">
+
+            <div class="member">
+                <img src="https://picsum.photos/300/250?11" alt="">
+                <h2>Ali Valiyev</h2>
+                <p>Frontend Developer</p>
+            </div>
+
+            <div class="member">
+                <img src="https://picsum.photos/300/250?12" alt="">
+                <h2>Jasur Karimov</h2>
+                <p>UI/UX Designer</p>
+            </div>
+
+            <div class="member">
+                <img src="https://picsum.photos/300/250?13" alt="">
+                <h2>Sardor Xasanov</h2>
+                <p>Backend Developer</p>
+            </div>
+
+            <div class="member">
+                <img src="https://picsum.photos/300/250?14" alt="">
+                <h2>Azizbek Qodirov</h2>
+                <p>Project Manager</p>
+            </div>
+
+        </div>
+
+        <!-- CONTACT FORM -->
+
+        <h1 class="title">CONTACT FORM</h1>
+
+        <div class="contact">
+
+            <form>
+
+                <input type="text" placeholder="Ismingiz">
+
+                <input type="email" placeholder="Email">
+
+                <input type="tel" placeholder="Telefon">
+
+                <textarea placeholder="Xabaringiz"></textarea>
+
+                <button type="submit">Yuborish</button>
+
+            </form>
+
+        </div>
+
+        <!-- FOOTER -->
+
+        <div class="footer">
+
+            <div class="logo">LOGO</div>
+
+            <div class="footer-menu">
+
+                <div class="footer-item">INFO</div>
+                <div class="footer-item">HELP</div>
+                <div class="footer-item">BLOG</div>
+                <div class="footer-item">CALL</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
