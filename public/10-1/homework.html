@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+
+    <style>
+        body {
+            background-color: lightyellow;
+            color: black;
+            font-size: 20px;
+        }
+
+        h1 {
+            background-color: orange;
+            color: white;
+
+            width: 600px;
+
+            border: 5px solid red;
+            border-radius: 20px;
+
+            padding: 20px;
+
+            margin: 30px auto;
+
+            text-align: center;
+        }
+
+        .box-model {
+            background-color: beige;
+
+            width: 650px;
+
+            border: 5px solid brown;
+            border-radius: 25px;
+
+            padding: 25px;
+
+            margin: 30px auto;
+        }
+
+        .box-model h2 {
+            color: darkred;
+            font-size: 35px;
+        }
+
+        .box-model p {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .padding-box {
+            background-color: lightpink;
+
+            width: 450px;
+
+            border: 5px solid red;
+            border-radius: 15px;
+
+            padding: 50px;
+
+            margin: 30px auto;
+        }
+
+        .padding-box h3 {
+            color: darkred;
+            font-size: 30px;
+        }
+
+        .padding-box p {
+            font-size: 22px;
+        }
+
+        .margin-box {
+            background-color: lightblue;
+
+            width: 450px;
+
+            border: 5px solid blue;
+            border-radius: 20px;
+
+            padding: 25px;
+
+            margin: 100px auto;
+        }
+
+        .margin-box h3 {
+            color: darkblue;
+            font-size: 30px;
+        }
+
+        .margin-box p {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .border-box {
+            background-color: lightgreen;
+
+            width: 500px;
+
+            border: 10px solid green;
+            border-radius: 35px;
+
+            padding: 30px;
+
+            margin: 40px auto;
+        }
+
+        .border-box h3 {
+            color: darkgreen;
+            font-size: 30px;
+        }
+
+        .border-box p {
+            font-size: 22px;
+        }
+
+        .width-box {
+            background-color: lavender;
+
+            width: 300px;
+
+            border: 5px solid purple;
+            border-radius: 20px;
+
+            padding: 25px;
+
+            margin: 30px auto;
+        }
+
+        .width-box h3 {
+            color: purple;
+            font-size: 28px;
+        }
+
+        .width-box p {
+            font-size: 22px;
+        }
+
+        .radius-box {
+            background-color: peachpuff;
+
+            width: 500px;
+
+            border: 5px solid chocolate;
+            border-radius: 50px;
+
+            padding: 30px;
+
+            margin: 40px auto;
+        }
+
+        .radius-box h3 {
+            color: brown;
+            font-size: 30px;
+        }
+
+        .radius-box p {
+            font-size: 22px;
+        }
+
+        .final-box {
+            background-color: red;
+            color: white;
+
+            width: 650px;
+
+            border: 6px solid darkred;
+            border-radius: 30px;
+
+            padding: 40px;
+
+            margin: 50px auto;
+
+            font-size: 28px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>📦 CSS BOX MODEL MAVZUSI</h1>
+
+    <div class="box-model">
+
+        <h2>📚 Box Model Nima?</h2>
+
+        <p>
+            HTML dagi har bir element quti kabi ishlaydi.
+            Bu qutining width, border, padding va margin qismlari bo‘ladi.
+        </p>
+
+        <p>
+            CSS yordamida biz shu qutining rangini,
+            kattaligini va tashqi ko‘rinishini boshqaramiz.
+        </p>
+
+    </div>
+
+    <div class="padding-box">
+
+        <h3>🧠 Padding Nima?</h3>
+
+        <p>
+            Padding element ichidagi bo‘sh joy hisoblanadi.
+            U text bilan border orasidagi masofani ochadi.
+        </p>
+
+        <p>
+            Padding katta bo‘lsa,
+            text borderga yopishib qolmaydi.
+        </p>
+
+    </div>
+
+    <div class="margin-box">
+
+        <h3>📏 Margin Nima?</h3>
+
+        <p>
+            Margin elementning tashqarisidagi bo‘sh joydir.
+        </p>
+
+        <p>
+            Margin yordamida elementlar bir-biridan uzoqlashadi.
+        </p>
+
+        <p>
+            Tepadan katta margin berilgani uchun
+            bu blok yuqoridagi blokdan uzoqlashdi.
+        </p>
+
+    </div>
+
+    <div class="border-box">
+
+        <h3>🟩 Border Nima?</h3>
+
+        <p>
+            Border elementning chetiga chiziq chizadi.
+        </p>
+
+        <p>
+            Borderning qalinligi,
+            rangi va turi bo‘ladi.
+        </p>
+
+        <p>
+            Bu blokda qalin yashil border ishlatilgan.
+        </p>
+
+    </div>
+
+    <div class="width-box">
+
+        <h3>📐 Width Nima?</h3>
+
+        <p>
+            Width elementning kengligini belgilaydi.
+        </p>
+
+        <p>
+            Width kichik bo‘lsa,
+            blok torroq ko‘rinadi.
+        </p>
+
+    </div>
+
+    <div class="radius-box">
+
+        <h3>⭕ Border Radius Nima?</h3>
+
+        <p>
+            Border-radius element burchaklarini yumaloq qiladi.
+        </p>
+
+        <p>
+            Radius katta bo‘lsa,
+            burchaklar yanada yumaloq bo‘ladi.
+        </p>
+
+    </div>
+
+    <div class="final-box">
+
+        🎉 Siz CSS Box Model mavzusining asosiy qismlarini o‘rgandingiz! <br><br>
+
+        ✅ Padding — ichki bo‘sh joy <br>
+        ✅ Margin — tashqi bo‘sh joy <br>
+        ✅ Border — chegara chizig‘i <br>
+        ✅ Width — kenglik <br>
+        ✅ Border Radius — yumaloq burchak
+
+    </div>
+
+</body>
+
+</html>
