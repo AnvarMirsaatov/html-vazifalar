@@ -61,7 +61,8 @@
       }
 
       table {
-        width: 100%;
+        width: 60%;
+        margin: auto;
         border-collapse: collapse;
       }
 
@@ -70,6 +71,9 @@
         border: 1px solid black;
         padding: 8px;
         text-align: center;
+      }
+      td{
+        text-align: left;
       }
 
       th {
@@ -141,14 +145,14 @@
       <h2>O'qituvchilar</h2>
 
       <div class="card">
-        <img src="teacher1.jpg" alt="Teacher" />
+        <img src="../img.jpg" alt="Teacher" />
         <p><strong>Ali Valiyev</strong></p>
         <p>Frontend mentor</p>
       </div>
       <br>
 
       <div class="card">
-        <img src="teacher2.jpg" alt="Teacher" />
+        <img src="../img.jpg" alt="Teacher" />
         <p><strong>Malika Karimova</strong></p>
         <p>UI/UX Designer</p>
       </div>
@@ -167,13 +171,23 @@
         </thead>
         <tbody>
           <tr>
-            <td>Anvar</td>
+            <td>Mustafo</td>
             <td>22</td>
             <td>Frontend</td>
           </tr>
           <tr>
-            <td>Madina</td>
-            <td>20</td>
+            <td>Abduraxmon</td>
+            <td>32</td>
+            <td>Backend</td>
+          </tr>
+          <tr>
+            <td>MuhammadJon</td>
+            <td>22</td>
+            <td>Frontend</td>
+          </tr>
+          <tr>
+            <td>Bekzod</td>
+            <td>12</td>
             <td>Backend</td>
           </tr>
         </tbody>
@@ -185,10 +199,10 @@
 
       <form>
         <label>Ism:</label><br />
-        <input type="text" /><br />
+        <input placeholder="Ismingizni kiriting" type="text" /><br />
 
         <label>Email:</label><br />
-        <input type="email" /><br />
+        <input placeholder="Emailingizni kiriting" type="email" /><br />
 
         <label>Kurs tanlang:</label><br />
         <select>
