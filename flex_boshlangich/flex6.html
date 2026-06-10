@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Master Practice</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 30px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,.1);
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            min-height: 250px;
+            padding: 20px;
+            border: 2px dashed #ddd;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            background: steelblue;
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            border-radius: 10px;
+            transition: .3s;
+        }
+
+        .box:hover {
+            transform: translateY(-10px);
+        }
+
+        .task1 {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .task2 {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .task3 {
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .task4 {
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .task5 {
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .task6 {
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .task7 {
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .task8 {
+            justify-content: space-evenly;
+            align-items: flex-end;
+        }
+
+        .task9 {
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .task10 {
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .task11 {
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .task12 {
+            justify-content: space-around;
+            align-items: flex-end;
+        }
+
+        .task13 {
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .task14 {
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            min-height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Flexbox Practice (14 Sections)</h1>
+
+    <section>
+        <h2>1. justify-content:center + align-items:center</h2>
+        <div class="flex task1">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. space-between</h2>
+        <div class="flex task2">
+            <div class="box">A</div>
+            <div class="box">B</div>
+            <div class="box">C</div>
+            <div class="box">D</div>
+            <div class="box">E</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. space-evenly</h2>
+        <div class="flex task3">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>4. align-items:flex-start</h2>
+        <div class="flex task4">
+            <div class="box">A</div>
+            <div class="box">B</div>
+            <div class="box">C</div>
+            <div class="box">D</div>
+            <div class="box">E</div>
+            <div class="box">F</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. align-items:flex-end</h2>
+        <div class="flex task5">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>6. space-around</h2>
+        <div class="flex task6">
+            <div class="box">A</div>
+            <div class="box">B</div>
+            <div class="box">C</div>
+            <div class="box">D</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>7. space-between + wrap</h2>
+        <div class="flex task7">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>8. space-evenly + flex-end</h2>
+        <div class="flex task8">
+            <div class="box">A</div>
+            <div class="box">B</div>
+            <div class="box">C</div>
+            <div class="box">D</div>
+            <div class="box">E</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>9. stretch</h2>
+        <div class="flex task9">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>10. flex-start</h2>
+        <div class="flex task10">
+            <div class="box">A</div>
+            <div class="box">B</div>
+            <div class="box">C</div>
+            <div class="box">D</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>11. flex-end</h2>
+        <div class="flex task11">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>12. space-around + flex-end</h2>
+        <div class="flex task12">
+            <div class="box">A</div>
+            <div class="box">B</div>
+            <div class="box">C</div>
+            <div class="box">D</div>
+            <div class="box">E</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>13. Dashboard Layout</h2>
+        <div class="flex task13">
+            <div class="box">U</div>
+            <div class="box">O</div>
+            <div class="box">P</div>
+            <div class="box">R</div>
+            <div class="box">S</div>
+            <div class="box">M</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>14. Final Challenge</h2>
+        <div class="flex task14">
+            <div class="box">1</div>
+            <div class="box">2</div>
+            <div class="box">3</div>
+            <div class="box">4</div>
+            <div class="box">5</div>
+            <div class="box">6</div>
+            <div class="box">7</div>
+            <div class="box">8</div>
+            <div class="box">9</div>
+            <div class="box">10</div>
+            <div class="box">11</div>
+            <div class="box">12</div>
+        </div>
+    </section>
+
+</body>
+
+</html>
