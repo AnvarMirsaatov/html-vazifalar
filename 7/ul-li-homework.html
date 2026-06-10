@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Teglarini O'rganamiz</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #dce6ee;
+            font-family: Arial, sans-serif;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0066ff;
+            margin-bottom: 30px;
+            text-decoration: underline;
+            font-size: 42px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+            border-left: 10px solid #0066ff;
+            transition: .3s;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            color: #0066ff;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        img {
+            width: 400px;
+            border-radius: 12px;
+            border: 4px solid #0066ff;
+            margin-top: 15px;
+        }
+
+        video {
+            width: 500px;
+            border-radius: 12px;
+            border: 4px solid green;
+            margin-top: 15px;
+        }
+
+        iframe {
+            border: 4px solid red;
+            border-radius: 12px;
+            margin-top: 15px;
+        }
+
+        ul,
+        ol {
+            margin-left: 30px;
+            font-size: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+        }
+
+        th {
+            background: #0066ff;
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        a {
+            color: red;
+            font-size: 22px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HTML Teglarini O'rganamiz</h1>
+
+    <div class="container">
+
+        <div class="section">
+            <h2>1. Strong va Bold</h2>
+
+            <p>
+                <strong>Bu strong tegi.</strong><br>
+                <b>Bu bold tegi.</b>
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>2. Em va Italic</h2>
+
+            <p>
+                <em>Bu em tegi.</em><br>
+                <i>Bu italic tegi.</i>
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>3. Mark Tegi</h2>
+
+            <p>
+                HTML darsida <mark>mark tegi matnni sariq rang bilan belgilaydi.</mark>
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>4. Sarlavhalar</h2>
+
+            <h1>H1</h1>
+            <h2>H2</h2>
+            <h3>H3</h3>
+            <h4>H4</h4>
+            <h5>H5</h5>
+            <h6>H6</h6>
+        </div>
+
+        <div class="section">
+            <h2>5. Tartibsiz Ro'yxat</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>6. Tartibli Ro'yxat</h2>
+
+            <ol>
+                <li>Kompyuterni yoqish</li>
+                <li>VS Code ochish</li>
+                <li>HTML yozish</li>
+                <li>Natijani tekshirish</li>
+            </ol>
+        </div>
+
+        <div class="section">
+            <h2>7. Rasm (IMG)</h2>
+
+            <img src="https://picsum.photos/600/300" alt="Random image">
+        </div>
+
+        <div class="section">
+            <h2>8. Video</h2>
+
+            <video controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="section">
+            <h2>9. Havola (Link)</h2>
+
+            <a href="https://www.google.com" target="_blank">
+                Google saytiga o'tish
+            </a>
+        </div>
+
+
+        <div class="section">
+            <h2>11. YouTube Iframe</h2>
+
+            <iframe width="700" height="400" src="https://www.youtube.com/embed/BsDoLVMnmZs" title="YouTube video"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="section">
+            <h2>12. Aralash Misol</h2>
+
+            <p>
+                <strong>HTML</strong> veb sahifa yaratish uchun ishlatiladi.
+                <em>CSS</em> dizayn beradi.
+                <i>JavaScript</i> esa interaktivlik qo'shadi.
+                <mark>Frontend dasturchi</mark> ushbu texnologiyalarni bilishi kerak.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
