@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Flexbox Portfolio Task</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial,sans-serif;background:#eee;padding:20px}
+.container{max-width:1400px;margin:auto;background:#fff;padding:30px}
+.title{margin:40px 0 20px}
+.flex{display:flex;gap:20px}
+.card,.box{display:flex;justify-content:center;align-items:center;background:#b22222;color:#fff;border-radius:8px}
+.card{width:250px;height:120px}
+.wrap{flex-wrap:wrap}
+.direction-row{display:flex;flex-direction:row;gap:10px}
+.direction-row-reverse{display:flex;flex-direction:row-reverse;gap:10px}
+.direction-column{display:flex;flex-direction:column;gap:10px}
+.direction-column-reverse{display:flex;flex-direction:column-reverse;gap:10px}
+.box{width:100px;height:100px}
+.grow{display:flex}
+.grow div{background:#444;color:#fff;padding:30px}
+.g1{flex-grow:1}.g2{flex-grow:2}.g3{flex-grow:3}
+.order{display:flex;gap:10px}
+.order div{width:100px;height:100px;background:teal;color:#fff;display:flex;align-items:center;justify-content:center}
+.o1{order:4}.o2{order:1}.o3{order:3}.o4{order:2}
+.self{display:flex;height:250px;background:#ddd}
+.self div{width:120px;height:80px;background:purple;color:#fff;margin:10px}
+.s1{align-self:flex-start}.s2{align-self:center}.s3{align-self:flex-end}
+.justify{display:flex;justify-content:space-evenly;background:#ddd;padding:10px}
+.align{display:flex;align-items:center;height:200px;background:#ddd}
+.align div,.justify div{width:80px;height:80px;background:#333;color:#fff;display:flex;align-items:center;justify-content:center}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Advanced Flexbox Portfolio</h1>
+
+<h2 class="title">Flex Wrap</h2>
+<div class="flex wrap">
+<div class="card">1</div><div class="card">2</div><div class="card">3</div>
+<div class="card">4</div><div class="card">5</div><div class="card">6</div>
+<div class="card">7</div><div class="card">8</div>
+</div>
+
+<h2 class="title">Flex Direction Row</h2>
+<div class="direction-row"><div class="box">1</div><div class="box">2</div><div class="box">3</div></div>
+
+<h2 class="title">Flex Direction Row Reverse</h2>
+<div class="direction-row-reverse"><div class="box">1</div><div class="box">2</div><div class="box">3</div></div>
+
+<h2 class="title">Flex Direction Column</h2>
+<div class="direction-column"><div class="box">1</div><div class="box">2</div><div class="box">3</div></div>
+
+<h2 class="title">Flex Direction Column Reverse</h2>
+<div class="direction-column-reverse"><div class="box">1</div><div class="box">2</div><div class="box">3</div></div>
+
+<h2 class="title">Flex Grow</h2>
+<div class="grow"><div class="g1">1</div><div class="g2">2</div><div class="g3">3</div></div>
+
+<h2 class="title">Order</h2>
+<div class="order"><div class="o1">1</div><div class="o2">2</div><div class="o3">3</div><div class="o4">4</div></div>
+
+<h2 class="title">Align Self</h2>
+<div class="self"><div class="s1">Start</div><div class="s2">Center</div><div class="s3">End</div></div>
+
+<h2 class="title">Justify Content</h2>
+<div class="justify"><div>1</div><div>2</div><div>3</div></div>
+
+<h2 class="title">Align Items</h2>
+<div class="align"><div>1</div><div>2</div><div>3</div></div>
+
+</div>
+</body>
+</html>
