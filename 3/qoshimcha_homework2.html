@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Qiyinlashtirilgan Vazifa</title>
+
+<style>
+
+body{
+    text-align: center;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    color: red;
+    margin-top: 30px;
+}
+
+h2{
+    color: #222;
+    margin-top: 40px;
+}
+
+/* asosiy circle */
+.circle{
+    width: 180px;
+    height: 180px;
+    background-color: red;
+    border: 5px solid black;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+/* rangli variantlar */
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+.black{
+    background-color: black;
+}
+
+/* matn bloklari */
+.box{
+    width: 320px;
+    background-color: white;
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 20px;
+    font-weight: 600;
+    color: rgb(180, 20, 20);
+    text-transform: capitalize;
+}
+
+/* rangli boxlar */
+.box2{
+    color: blue;
+}
+
+.box3{
+    color: green;
+}
+
+/* section */
+.section{
+    margin-top: 50px;
+    padding: 10px;
+    border-top: 2px solid #ccc;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>CSS Qiyinlashtirilgan Vazifa</h1>
+
+<!-- 1-bo‘lim -->
+<div class="section">
+    <h2>1-bo‘lim (Qizil)</h2>
+    <div class="circle"></div>
+    <div class="box">
+        bu birinchi matn bloki. u qizil circle bilan bog‘langan.
+        margin, padding va border ishlatilgan.
+    </div>
+</div>
+
+<!-- 2-bo‘lim -->
+<div class="section">
+    <h2>2-bo‘lim (Ko‘k)</h2>
+    <div class="circle blue"></div>
+    <div class="box box2">
+        bu ikkinchi matn bloki. circle rangi o‘zgartirilgan.
+        css class qo‘shish orqali rang boshqarilgan.
+    </div>
+</div>
+
+<!-- 3-bo‘lim -->
+<div class="section">
+    <h2>3-bo‘lim (Yashil)</h2>
+    <div class="circle green"></div>
+    <div class="box box3">
+        bu uchinchi blok. yashil circle va yashil matn ishlatilgan.
+        class orqali stil ajratilgan.
+    </div>
+</div>
+
+<!-- 4-bo‘lim -->
+<div class="section">
+    <h2>4-bo‘lim (Qora)</h2>
+    <div class="circle black"></div>
+    <div class="box">
+        bu oxirgi blok. qora circle ishlatilgan.
+        css class kombinatsiyasi amalda ko‘rsatilgan.
+    </div>
+</div>
+
+</body>
+</html>
